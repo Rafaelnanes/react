@@ -15,15 +15,19 @@ class Nav extends React.Component {
                     </div>
                     <div id="navbar">
                         <ul className="nav navbar-nav">
-                            <li className={(this.props.currentPage === 'home') ? 'active' : ''}><a href="#">Home</a></li>
-                            <li className={(this.props.currentPage === 'about') ? 'active' : ''}><a href="#">About</a></li>
-                            <li className={(this.props.currentPage === 'contact') ? 'active' : ''}><a href="#">Contact</a></li>
+                            <li className='active'><a href="#">Home</a></li>
+                            <li className=''><a href="#">About</a></li>
+                            <li className=''><a href="#">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         );
     }
+}
+
+Nav.defaultProps = {
+    brand: 'Api-Test',
 }
 
 export default Nav;
